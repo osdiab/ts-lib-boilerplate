@@ -2,6 +2,10 @@
 
 Boilerplate to get started writing a library in TypeScript
 
+**DISCLAIMER:** I just made this for myself since I do this over and over again, so if
+you use this dependencies might go out of date or your functionality will
+probably be missing. Be warned!
+
 ## Get started
 
 With `node` and `yarn` installed on your machine,
