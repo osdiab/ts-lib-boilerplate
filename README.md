@@ -29,7 +29,8 @@ Write code in `src/`, publish it to NPM with `npm publish`.
 
 ### Testing
 
-Write tests in files matching `test/**/*.test.ts`. Run `yarn test:unit`.
+Write tests in files matching `test/**/*.test.ts`. Run `yarn test:unit`. (The
+`yarn test` command also runs lint)
 
 Config is set up so that tests can import code in src as `@src/path/to/module`,
 but code in `src` cannot import code from `test`.
