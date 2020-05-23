@@ -10,7 +10,7 @@ probably be missing. Be warned!
 
 With `node` and `yarn` installed on your machine,
 
-1. Clone this repo
+1. Fork this repo
 1. Run `yarn install`
 1. Update `package.json` to have your package name, description, etc
 1. Get coding!
