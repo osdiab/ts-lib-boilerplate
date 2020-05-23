@@ -13,7 +13,7 @@
   ],
   "scripts": {
     "test": "concurrently \"yarn test:unit\" \"yarn lint\"",
-    "test:unit": "ava",
+    "test:unit": "cross-env TS_NODE_PROJECT=\"test/tsconfig.json\" ava",
     "lint": "xo",
     "prepublishOnly": "concurrently \"yarn test\" \"yarn build:clean && yarn build\"",
     "build": "tsc",
