@@ -12,10 +12,10 @@
     "dist"
   ],
   "scripts": {
-    "test": "concurrently \"yarn test:unit\" \"yarn lint\"",
+    "test": "concurrently -n \"unit,lint\" -c \"green,blue\" \"yarn test:unit\" \"yarn lint\"",
     "test:unit": "cross-env TS_NODE_PROJECT=\"test/tsconfig.json\" ava",
     "lint": "xo",
-    "prepublishOnly": "concurrently \"yarn test\" \"yarn build:clean && yarn build\"",
+    "prepublishOnly": "concurrently -n \"test,build\" -c \"red,yellow\" \"yarn test\" \"yarn build:clean && yarn build\"",
     "build": "tsc",
     "build:clean": "yarn del dist"
   },
