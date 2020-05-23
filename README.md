@@ -49,3 +49,19 @@ extension, and the workspace config automaticaly will enable auto fixing errors.
 Running `npm publish` will automatically build, test, and lint your code,
 concurrently for speed. If anything fails it will prevent the build from getting
 published.
+
+## A note on using modern JS
+Be careful of using bleeding edge JavaScript code - while language syntax
+features like `async`/`await`, `rest` and `spread` (`...`) syntax are easily
+supported by TypeScript, it doesn't guarantee that standard library features
+like `fetch`, `Promise`, or `Array.includes` will be present for your users.
+Bundling polyfills with your library is a bad idea since it bloats your library with
+code your users may not want.
+
+So keep in mind who your library is for, and use the runtime features present
+for those users.
+
+- Need to support old browsers? Add `dom` to the `tsconfig.json` `lib` property
+  so you can access browser stuff in your code, but don't add the `@types/node`
+  dependency.
+- Or only new versions of node? Maybe `es6` is fine to add to `lib`!
