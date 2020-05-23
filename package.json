@@ -1,0 +1,10 @@
+{
+  "name": "myfitnesspal-bulk-add-weight",
+  "version": "0.0.1",
+  "description": "Bulk add past weight measurements to MyFitnessPal",
+  "main": "dist/index.js",
+  "repository": "https://github.com/osdiab/myfitnesspal-bulk-add-weight",
+  "author": "Omar Diab <me@omardiab.com>",
+  "license": "MIT",
+  "private": false
+}
