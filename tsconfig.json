@@ -1,19 +1,23 @@
+// configuration for source code for dev and build (can't require from tests)
 {
     "compilerOptions": {
+        // output config
         "module": "commonjs",
         "target": "es5",
-        "noImplicitAny": true,
+        "sourceMap": true,
+        "outDir": "./dist/",
+        "declaration": true,
+        // strict rules
         "strict": true,
+        "noImplicitAny": true,
         "noImplicitReturns": true,
         "noImplicitThis": true,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
-        "sourceMap": true,
-        "outDir": "./dist/",
-        "declaration": true
+        // allow tests to refer to this project
+        "composite": true
     },
     "include": [
-        "./src/*.ts",
-        "./tests/*.ts"
+        "src"
     ]
 }
