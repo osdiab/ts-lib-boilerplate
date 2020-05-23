@@ -28,8 +28,5 @@
     "tsconfig-paths": "^3.9.0",
     "typescript": "^3.9.3",
     "xo": "^0.30.0"
-  },
-  "dependencies": {
-    "puppeteer": "^3.1.0"
   }
 }
