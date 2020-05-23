@@ -15,8 +15,9 @@
     "test": "concurrently \"yarn test:unit\" \"yarn lint\"",
     "test:unit": "ava",
     "lint": "xo",
-    "prepublishOnly": "concurrently \"yarn test\" \"yarn build\"",
-    "build": "tsc"
+    "prepublishOnly": "concurrently \"yarn test\" \"yarn build:clean && yarn build\"",
+    "build": "tsc",
+    "build:clean": "yarn del dist"
   },
   "devDependencies": {
     "ava": "^3.8.2",
