@@ -6,5 +6,25 @@
   "repository": "https://github.com/osdiab/myfitnesspal-bulk-add-weight",
   "author": "Omar Diab <me@omardiab.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "test": "concurrently \"yarn test:unit\" \"yarn lint\"",
+    "test:unit": "ava",
+    "lint": "xo",
+    "prepublish": "yarn test"
+  },
+  "devDependencies": {
+    "ava": "^3.8.2",
+    "concurrently": "^5.2.0",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.3",
+    "xo": "^0.30.0"
+  },
+  "dependencies": {
+    "puppeteer": "^3.1.0"
+  }
 }
