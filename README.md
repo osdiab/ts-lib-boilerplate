@@ -19,10 +19,11 @@ With `node` and `yarn` installed on your machine,
 
 ### Coding
 
-Write code in `src/`, publish it to NPM with `npm publish`.
+Write code in `src/`.
 
 - If you use VSCode, TypeScript errors will show up automatically. 
 - To typecheck/build code manually, run `yarn build`
+- Sourcemaps and declarations are present out of the box
 - FYI there's no "start" script since libraries aren't necesssarily cli utilities 
   (test your code out by writing tests), follow tutorials to figure that out
   (hint: the `bin` property is what makes it possible)
