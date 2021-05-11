@@ -1,3 +1,5 @@
+# NOT MAINTAINED.
+
 # ts-lib-boilerplate
 
 Boilerplate to get started writing a library in TypeScript
